@@ -32,7 +32,6 @@ mkdir node1,2,3
 		geth --http --http.api eth,net,web3,miner,admin --http.addr 0.0.0.0 --http.port 8545 --port 30303 --authrpc.port 8551  --authrpc.jwtsecret node1/geth/jwtsecret --networkid 1 --nodiscover --datadir node1 console
 
 		get enode: admin.nodeInfo
-			"enode://0af91c8b1de61b2b743b9033bcc1ad7a5cbf5a522ab45985bab99c1df70741c76c367ad0f258af74d53a754226a174a6b3c478edf283a0dc68086751fae76603@127.0.0.1:30303?discport=0"
 
 	//Node2
 		geth --http --http.api eth,net,web3,miner,admin --http.addr 0.0.0.0 --http.port 8546 --port 30304 --authrpc.port 8552 --authrpc.jwtsecret node2/geth/jwtsecret --networkid 1 --nodiscover --datadir node2 console
