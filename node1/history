@@ -1,0 +1,43 @@
+eth.syncing
+geth --syncmode "full"
+lighthouse beacon_node \
+--network mainnet \
+--execution-endpoint http://127.0.0.1:8551 \
+--execution-jwt node1/geth/jwtsecret \
+--checkpoint-sync-url https://mainnet.checkpoint.sigp.io \
+eth.syning
+eth.syncing
+admin
+admin.peers
+eth.syncing
+eth.pendingTransactions
+eth.pendingTransaction
+eth.pendingTransactions
+eth.getBalance("0xe338D9C16fDF1f77a10B84B865fa241bdB339964")
+admin
+admin.peers
+eth.pendingTransactions
+admin.peers
+eth,syncing
+eth.syncing
+eth,syncing
+eth.syncing
+eth.getBlock("lastest")
+admin
+eth.getBlock('latest')
+eth.syncing
+eth.pendingTransactions
+eth.getBalance('0xe338D9C16fDF1f77a10B84B865fa241bdB339964')
+eth.pendingTransactions
+eth.syncing
+eth.getBlock('latest')
+admin
+admin.peers
+eth.getBlock('latest')
+eth.syncing
+eth.pendingTransactions
+eth.getBlock('latest')
+eth.pendingTransactions
+eth.syncing
+ls
+exity
