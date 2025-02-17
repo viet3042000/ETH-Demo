@@ -3,25 +3,23 @@ const hre = require("hardhat");
 
 async function main() {
 
-    // Get the ContractFactory of your SimpleContract
-    const SimpleContract = await hre.ethers.getContractFactory("SimpleContract");
-    // Deploy the contract
-    const contract = await SimpleContract.deploy();
+  const nameA = "MyTokenA";
+  const nameB = "MyTokenB";
+  const symbolA = "MCTA";
+  const symbolA = "MCTB";
+  const decimals = 18;
 
-    // Wait for the deployment transaction to be mined
-    await contract.deployed();
-
-    console.log(`SimpleContract deployed to: ${contract.address}`);
-
-  // const name = "MyTokenA";
-  // const symbol = "MCT";
-  // const decimals = 18;
-
-  // const MyTokenA = await hre.ethers.getContractFactory("MyTokenA");
-  // console.log(MyTokenA);
-  // const token = await MyTokenA.deploy(name, symbol, decimals);
-  // await token.deployed();
-  // console.log(`MyTokenA deployed at: ${token.address}`);
+  const MyTokenA = await hre.ethers.getContractFactory(nameA);
+  const MyTokenA = await hre.ethers.getContractFactory(nameB);
+  console.log(MyTokenA);
+  console.log(MyTokenB);
+    
+  const tokenA = await MyTokenA.deploy(nameA, symbolA, decimals);
+  const tokenB = await MyTokenB.deploy(nameB, symbolB, decimals);
+  await tokenA.deployed();
+  await tokenB.deployed();
+  console.log(`MyTokenA deployed at: ${tokenA.address}`);
+  console.log(`MyTokenB deployed at: ${tokenB.address}`);
 }
 
 main().catch((error) => {
